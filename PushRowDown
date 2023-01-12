@@ -1,0 +1,105 @@
+Sub PushRowDown()
+    Dim currRow As Long
+    Dim currCol As Long
+    Dim today As Date
+    Dim lastRow As Long
+    
+    today = Date
+    currRow = 1
+    currCol = 1
+    lastRow = ActiveSheet.Cells(Rows.Count, currCol).End(xlUp).Row
+    
+    ' Check if the last row is not today's date
+    If ActiveSheet.Cells(lastRow, currCol).Value <> today Then
+        ' Shift the current rows down by one
+        ActiveSheet.Rows(currRow & ":" & lastRow).Insert Shift:=xlDown
+        ' Add new cell values for the current day
+        ActiveSheet.Cells(currRow, currCol).Value = today
+        ActiveSheet.Cells(currRow, currCol + 1).Value = Time
+        ActiveSheet.Cells(currRow, currCol + 2).Value = "New Value"
+        ' Execute the macro on the top row for the current day
+        Call MyMacro
+    End If
+End Sub
+In this example, the code first defines a variable called today and sets it to the current date. It then defines the variables currRow, currCol, and lastRow and sets them to the first row, first column, and the last row with data respectively.
+
+The code then checks if the last row of the sheet is not today's date, if so it uses the Insert method to push the current rows down by one, add new cell values for the current day and use Call statement to execute the macro named "MyMacro" in the top row for the current day.
+
+Please note that this is just an example and you should modify the code to match your needs, including the macro name and the worksheet you want to use. Also, you should test the code thoroughly before using it in a production environment.
+
+
+
+
+renjith.rohin@gmail.com
+Is the world bullish on indian stock market?
+The sentiment on the Indian stock market can vary depending on a variety of factors, including economic conditions, political developments, and global market trends.
+
+In recent times, there has been a bullish sentiment on the Indian stock market, as the country has been performing well economically and has been attracting foreign investment. The Indian government has implemented several economic reforms and measures to improve the ease of doing business, which has led to increased investor confidence. Additionally, the Indian market has been relatively stable and resilient, even in the face of global market volatility.
+
+However, it's worth noting that the stock market is subject to fluctuations, and the sentiment can change quickly based on various factors, both internal and external. As such, it's important for investors to stay informed and conduct their own research before making any investment decisions.
+
+It's also worth mentioning that the market sentiment can be different for different sectors, and there could be bullish or bearish sentiments for specific sectors. Additionally, the market sentiment can change over time, and it's always a good idea to stay informed and up to date with the latest trends and developments.
+
+
+
+
+renjith.rohin@gmail.com
+Whats your view in FII investment in india stock market for the last few months? Is it increasing or declining?
+My knowledge cutoff is till 2021, and I cannot provide you with the most recent information on FII investment in the Indian stock market. However, I can tell you that FII investment in the Indian stock market has been generally positive in recent times, with many foreign investors showing interest in the Indian market.
+
+In general, Foreign Institutional Investors (FIIs) have been an important source of capital for the Indian stock market, and their investment has been positively correlated with the performance of the market. In the last few months, the Indian stock market has been performing well, and this has been attracting the attention of foreign investors.
+
+Factors such as positive economic growth, positive earnings outlook, stability in currency and relatively low interest rate environment have been driving the FII investment in India. However, it's important to note that FII investment can be affected by a variety of factors, both internal and external, such as global economic conditions, political developments, and changes in investment regulations.
+
+It's also worth noting that the FII investment can be different for different sectors, and there could be bullish or bearish sentiments for specific sectors. Additionally, the investment can change over time and it's always a good idea to stay informed and up to date with the latest trends and developments.
+
+
+
+
+renjith.rohin@gmail.com
+Whats the latest rate at which nifty50 traded?
+I'm sorry, but my training data only goes up to 2021, and I am unable to provide you with the most recent trading rate of Nifty50. The Nifty50 is an index of 50 of the most liquid stocks listed on the National Stock Exchange of India (NSE), and its value is determined by the performance of those stocks. It's important to note that the value of the Nifty50 can fluctuate greatly depending on the performance of the underlying stocks and the overall market conditions.
+
+It's always a good idea to check with a reliable financial source for the most up-to-date information on the Nifty50 and other stock market indices. Also, you can check the Nifty50 value on different financial websites or on the NSE website.
+
+
+
+
+renjith.rohin@gmail.com
+How many died in the world due to covid?
+As of 2021, the number of deaths globally due to COVID-19 has surpassed tens of millions. The exact number of deaths varies depending on the source and the data available. The World Health Organization (WHO) has reported that as of 2021, over 150 million confirmed cases and more than 3 million deaths have been reported globally.
+
+It's important to note that the number of reported deaths may not be completely accurate as it can be affected by underreporting, misclassification of cause of death, and other factors. Additionally, the situation is constantly evolving, and the number of deaths can change rapidly. The numbers also vary depending on the country.
+
+It's important to note that COVID-19 has caused a significant public health crisis, and the number of deaths has had a profound impact on individuals, families, and communities around the world. It's important to follow the guidance of public health officials, including getting vaccinated, wearing masks, and social distancing to prevent the spread of the disease.
+
+
+
+
+renjith.rohin@gmail.com
+How to train your 3 year old to learn good habits?
+Training a 3-year-old to learn good habits can be challenging, but it can be done with patience, consistency, and positive reinforcement. Here are a few tips to help you train your 3-year-old to learn good habits:
+
+Start with simple habits: Begin with simple habits that are easy for your child to understand and follow, such as washing hands, brushing teeth, and picking up toys.
+
+Use positive reinforcement: Use positive reinforcement to encourage good behavior. Praise your child when they exhibit the desired behavior and provide rewards, such as stickers or small toys.
+
+Lead by example: Children learn by observing and mimicking adults. Lead by example and consistently practice good habits yourself.
+
+Make it fun: Make learning good habits fun by turning them into games or using colorful charts to track progress.
+
+Be consistent: Consistently remind your child of the importance of good habits and consistently enforce rules.
+
+Use age-appropriate explanations: Children at this age have a limited understanding of abstract concepts, use simple language and visual aids to explain the importance of good habits.
+
+Be patient: It can take time for children to learn new habits, be patient and remember that progress may not be linear.
+
+Be flexible: Be flexible with your approach and be willing to adjust your approach if it is not working.
+
+Encourage independence: Encourage your child to take ownership of their own habits and make them responsible for their own routine.
+
+It's important to remember that every child is different and what works for one child may not work for another. It's important to keep in mind that your child is still learning and developing, and it's normal for them to make mistakes. Stay patient and consistent, and always use positive reinforcement to encourage good behavior.
+
+
+
+
